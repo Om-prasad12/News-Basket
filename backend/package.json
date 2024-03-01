@@ -8,7 +8,7 @@
     "start": "node src/app.js",
     "dev": "node app.js"
   },
-  "keywords": [],
+  "keywords": [ "restfulapi"],
   "author": "",
   "license": "ISC",
   "dependencies": {
