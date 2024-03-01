@@ -1,0 +1,69 @@
+.navigation-menu{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.navigation-menu li{
+    margin: 0px 25px;
+}
+
+.navigation-menu li a:hover{
+    color:rgb(203, 151, 87);
+}
+
+.navigation-menu li a{
+    text-decoration: none;
+    color: white;
+    font-size:large ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* For flex box */
+.flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* For drawer */
+.navigation-mobile{
+    list-style: none;
+}
+
+.navigation-mobile li{
+    margin-top: 2px;
+}
+.navigation-mobile li a{
+    text-decoration: none;
+    color:black;
+    font-size:large ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navigation-mobile li a:hover{
+    color:rgb(203, 151, 87);
+}
+
+/* For Footer */
+
+.socialmedia{
+    display: flex;
+}
+.subSocialmedia{
+    margin: 4px;
+}
+
+.footerBody{
+    width: 100%;
+    background-color: rgb(48, 46, 46);
+}
+
+.subFooterBody{
+    color:white;
+    width:90%;
+    margin: auto;
+}
