@@ -28,7 +28,7 @@ function Home() {
         <Box  sx={{
           width: 400,
           height:650,margin:2
-          }}>     
+          }}>     fhkfkhddh
         <Card sx={{width: "400px",height:"640px"}}>
         <CardMedia component={'img'} height="300"  src={value.urlToImage} alt='Image'></CardMedia>
         <CardContent sx={{width: "380px",height:"250px"}}>

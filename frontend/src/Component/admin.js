@@ -39,6 +39,7 @@ const closedMixin = (theme) => ({
   },
 });
 
+
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",

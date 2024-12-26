@@ -1,6 +1,7 @@
 const express = require("express");
-require("./db/connection");
-const {News,User} =require("./model/newsdetails")
+require("dotenv").config();
+require("./src/db/connection");
+const {News,User} =require("./src/model/newsdetails")
 const app = express();
 app.use(express.json());
 
@@ -18,6 +19,7 @@ app.post("/news",(req,res) =>
         res.send(e)
     })
 })
+// For error page
 
 //For get data
 app.get("/news",async(req,res)=>{
@@ -241,6 +243,9 @@ app.get("/user/:id",async(req,res)=>{
 //     // console.log(e);
 //   }
 //  })
+app.use((req, res) => {
+  res.status(404).send("Error: Page not found");
+});
 
 app.listen(port,() =>
 {
