@@ -19,6 +19,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import "./Body.css";
 
 
+const serverUrl = "https://news-basket-wof1.vercel.app";
 
 const Navbar = (props) => {
   const {name,userId}=props;
@@ -26,22 +27,24 @@ const Navbar = (props) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const profileHandler = async() => {
     console.log(userId);
-    const res= await axios.get(`/user/${userId}`);
+    const res= await axios.get(`${serverUrl}/user/${userId}`);
     setData(res.data.role);
+    console.log(res);
   };
 
  
 
-  useEffect(()=>{
-    if(data){
-      localStorage.setItem("role",data)
-      if(data === "admin"){
-        navigate("/admin")
-      }else{
-        navigate("/profile")
-      } 
+  useEffect(() => {
+    if (data) {
+      console.log(data);  // This will log the updated `data`
+      localStorage.setItem("role", data);
+      if (data === "admin") {
+        navigate("/admin");
+      } else {
+        navigate("/profile");
+      }
     }
-  },[data]);
+  }, [data]); 
 
   //Handel menu click
   const handleDrawerToggle = () => {

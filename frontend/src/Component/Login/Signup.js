@@ -32,8 +32,9 @@ const [userId,setUserId]=useState({id:""})
   )
  }}
 
+ const serverUrl = "https://news-basket-wof1.vercel.app";
  useEffect(()=>{
-  axios.post(`/user`,userId)
+  axios.post(`${serverUrl}/user`,userId)
     .then((responce) => {  
       console.log(userId);
      }).catch((error)=>{
