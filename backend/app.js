@@ -8,6 +8,9 @@ app.use(express.json());
 const port =process.env.PORT || 8000;
 
 //For Creating data or post data.
+app.get("/",(req,res) =>{
+    res.send("Welcome to the news API");
+})
 
 app.post("/news",(req,res) =>
 {
